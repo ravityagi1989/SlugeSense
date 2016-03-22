@@ -11,7 +11,7 @@ import UIKit
 
 class Theme {
     
-    // MARK: - Public class methods
+    // MARK: - Public methods
     
     class func redColor() -> UIColor {
         return UIColor(red: 250.0/255.0, green: 66.0/255.0, blue: 70.0/255.0, alpha: 1.0)
@@ -20,9 +20,6 @@ class Theme {
     class func blueColor() -> UIColor {
         return UIColor(red: 45.0/255.0, green: 59.0/255.0, blue: 108.0/255.0, alpha: 1.0)
     }
-    
-    
-    
     
 }
 

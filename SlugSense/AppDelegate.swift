@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -25,6 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let appearance = UINavigationBar.appearance()
         appearance.barTintColor = Theme.redColor()
         appearance.titleTextAttributes = textAttributes
+
+       // Change status bar style to light content
+        
+       // UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
         
 //        
 //        let entity = NSEntityDescription.entityForName("Location", inManagedObjectContext: CoreDataManager.sharedManager.managedObjectContext)

@@ -13,8 +13,10 @@ import CoreLocation
 class ViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet var map: MKMapView?
+
+    @IBOutlet weak var bottomActionView: UIView!
     
-    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var bottomDetailView: UIView!
     
     var didShowUserLocation = false
 
@@ -24,8 +26,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // Setup bottom view
-        self.bottomView.backgroundColor = Theme.redColor()
+        // Setup bottom views
+        bottomActionView.backgroundColor = Theme.redColor()
+        bottomDetailView.backgroundColor = Theme.redColor()
         
         self.title = "Location Title"
         

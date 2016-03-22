@@ -110,8 +110,8 @@
 		C598FAF51C7CF0F500A3748D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C598FACC1C7BD70100A3748D /* ViewController.swift */,
 				C598FACE1C7BD70100A3748D /* Main.storyboard */,
+				C598FACC1C7BD70100A3748D /* ViewController.swift */,
 				C598FAF91C7CF6D500A3748D /* LocationSummaryView.swift */,
 				C598FAF71C7CF16B00A3748D /* SlugPointAnnotation.swift */,
 			);
