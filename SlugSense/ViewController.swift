@@ -10,13 +10,23 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, SegueHandlerType {
+
+    enum SegueIdentifier: String {
+        case ShowSlugScreen
+        case ShowDriverScreen
+    }
+    
     
     @IBOutlet var map: MKMapView?
 
     @IBOutlet weak var bottomActionView: UIView!
     
     @IBOutlet weak var bottomDetailView: UIView!
+    
+    @IBOutlet weak var slugLabel: UILabel!
+    
+    @IBOutlet weak var wheelLabel: UILabel!
     
     var didShowUserLocation = false
 
@@ -30,7 +40,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         bottomActionView.backgroundColor = Theme.redColor()
         bottomDetailView.backgroundColor = Theme.redColor()
         
-        self.title = "Location Title"
+        self.title = "Location"
         
         
         //Ask for user location permission
@@ -108,6 +118,47 @@ class ViewController: UIViewController, MKMapViewDelegate {
         self.title = slugAnnotation.location?.name
         
     }
+    
+    
+    // MARK: - IBActions
+   
+    @IBAction func handleAction(sender: UIButton) {
+        
+        let isSlugAction = sender.tag == 0
+        
+        if isSlugAction {
+            self.performSegueWithIdentifier(.ShowSlugScreen, sender: sender)
+            
+        }else{
+            self.performSegueWithIdentifier(.ShowDriverScreen, sender: sender)
+        }
+        
+    }
+    
+    
+    
+    /*
+    // MARK: UIStoryboardSegue Handling
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let segueIdentifier = segueIdentifierWithSegue(segue)
+        
+        switch segueIdentifier {
+        case .ShowSlugScreen:
+            let slugViewController = segue.destinationViewController
+            
+            
+        case .ShowDriverScreen:
+            
+        default:
+            <#code#>
+        }
+        
+        
+    }
+ */
     
 }
 

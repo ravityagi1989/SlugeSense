@@ -23,7 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSFontAttributeName: UIFont.boldSystemFontOfSize(20)]
         let appearance = UINavigationBar.appearance()
         appearance.barTintColor = Theme.redColor()
+        appearance.tintColor = Theme.blueColor()
         appearance.titleTextAttributes = textAttributes
+        
 
        // Change status bar style to light content
         

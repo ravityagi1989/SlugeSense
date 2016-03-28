@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F0DCED71CA8F85900A3AF4B /* SlugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DCED61CA8F85900A3AF4B /* SlugViewController.swift */; };
+		8F0DCED91CA8F8BD00A3AF4B /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DCED81CA8F8BD00A3AF4B /* DriverViewController.swift */; };
+		8F0DCEDE1CA8FD5C00A3AF4B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DCEDA1CA8FD5C00A3AF4B /* Request.swift */; };
+		8F0DCEDF1CA8FD5C00A3AF4B /* Request+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DCEDB1CA8FD5C00A3AF4B /* Request+CoreDataProperties.swift */; };
+		8F0DCEE01CA8FD5C00A3AF4B /* RequestQueue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DCEDC1CA8FD5C00A3AF4B /* RequestQueue.xcdatamodeld */; };
+		8F0DCEE31CA8FDA300A3AF4B /* SessionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DCEE11CA8FDA300A3AF4B /* SessionTracker.swift */; };
+		8F0DCEE41CA8FDA300A3AF4B /* SyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DCEE21CA8FDA300A3AF4B /* SyncEngine.swift */; };
 		8F6FB92F1C9FB8380007A28D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FB92E1C9FB8380007A28D /* Theme.swift */; };
+		8F8D800D1CA27129003B4D89 /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D800C1CA27129003B4D89 /* SegueHandlerType.swift */; };
 		C598FACB1C7BD70100A3748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598FACA1C7BD70100A3748D /* AppDelegate.swift */; };
 		C598FACD1C7BD70100A3748D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598FACC1C7BD70100A3748D /* ViewController.swift */; };
 		C598FAD01C7BD70100A3748D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C598FACE1C7BD70100A3748D /* Main.storyboard */; };
@@ -28,7 +36,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F0DCED61CA8F85900A3AF4B /* SlugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlugViewController.swift; sourceTree = "<group>"; };
+		8F0DCED81CA8F8BD00A3AF4B /* DriverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
+		8F0DCEDA1CA8FD5C00A3AF4B /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		8F0DCEDB1CA8FD5C00A3AF4B /* Request+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Request+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8F0DCEDD1CA8FD5C00A3AF4B /* RequestQueue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RequestQueue.xcdatamodel; sourceTree = "<group>"; };
+		8F0DCEE11CA8FDA300A3AF4B /* SessionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTracker.swift; sourceTree = "<group>"; };
+		8F0DCEE21CA8FDA300A3AF4B /* SyncEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncEngine.swift; sourceTree = "<group>"; };
 		8F6FB92E1C9FB8380007A28D /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8F8D800C1CA27129003B4D89 /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
 		C598FAC71C7BD70100A3748D /* SlugSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlugSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C598FACA1C7BD70100A3748D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C598FACC1C7BD70100A3748D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F8D800B1CA270F5003B4D89 /* Helper Types */ = {
+			isa = PBXGroup;
+			children = (
+				8F8D800C1CA27129003B4D89 /* SegueHandlerType.swift */,
+			);
+			name = "Helper Types";
+			sourceTree = "<group>";
+		};
 		C598FABE1C7BD70100A3748D = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +106,7 @@
 			children = (
 				C598FAF21C7CF00900A3748D /* pin.png */,
 				C598FACA1C7BD70100A3748D /* AppDelegate.swift */,
+				8F8D800B1CA270F5003B4D89 /* Helper Types */,
 				C598FAF51C7CF0F500A3748D /* Views */,
 				C598FAF61C7CF10C00A3748D /* Controllers */,
 				C598FAF41C7CF0C900A3748D /* Model */,
@@ -100,6 +125,9 @@
 				C598FAE21C7CCD3400A3748D /* Location.swift */,
 				C598FAE31C7CCD3400A3748D /* Rating+CoreDataProperties.swift */,
 				C598FAE41C7CCD3400A3748D /* Rating.swift */,
+				8F0DCEDA1CA8FD5C00A3AF4B /* Request.swift */,
+				8F0DCEDB1CA8FD5C00A3AF4B /* Request+CoreDataProperties.swift */,
+				8F0DCEDC1CA8FD5C00A3AF4B /* RequestQueue.xcdatamodeld */,
 				C598FAE51C7CCD3400A3748D /* Message+CoreDataProperties.swift */,
 				C598FAE61C7CCD3400A3748D /* Message.swift */,
 				8F6FB92E1C9FB8380007A28D /* Theme.swift */,
@@ -112,6 +140,8 @@
 			children = (
 				C598FACE1C7BD70100A3748D /* Main.storyboard */,
 				C598FACC1C7BD70100A3748D /* ViewController.swift */,
+				8F0DCED61CA8F85900A3AF4B /* SlugViewController.swift */,
+				8F0DCED81CA8F8BD00A3AF4B /* DriverViewController.swift */,
 				C598FAF91C7CF6D500A3748D /* LocationSummaryView.swift */,
 				C598FAF71C7CF16B00A3748D /* SlugPointAnnotation.swift */,
 			);
@@ -121,6 +151,8 @@
 		C598FAF61C7CF10C00A3748D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8F0DCEE11CA8FDA300A3AF4B /* SessionTracker.swift */,
+				8F0DCEE21CA8FDA300A3AF4B /* SyncEngine.swift */,
 				C598FAED1C7CCD7800A3748D /* DataManager.swift */,
 				C598FADF1C7CCD1600A3748D /* CoreDataManager.swift */,
 			);
@@ -206,13 +238,21 @@
 				C598FACB1C7BD70100A3748D /* AppDelegate.swift in Sources */,
 				C598FAEA1C7CCD3400A3748D /* Rating.swift in Sources */,
 				C598FAEB1C7CCD3400A3748D /* Message+CoreDataProperties.swift in Sources */,
+				8F0DCED91CA8F8BD00A3AF4B /* DriverViewController.swift in Sources */,
+				8F0DCEE01CA8FD5C00A3AF4B /* RequestQueue.xcdatamodeld in Sources */,
+				8F0DCEDE1CA8FD5C00A3AF4B /* Request.swift in Sources */,
 				C598FAE91C7CCD3400A3748D /* Rating+CoreDataProperties.swift in Sources */,
 				C598FAEC1C7CCD3400A3748D /* Message.swift in Sources */,
+				8F0DCEE31CA8FDA300A3AF4B /* SessionTracker.swift in Sources */,
+				8F0DCEE41CA8FDA300A3AF4B /* SyncEngine.swift in Sources */,
+				8F0DCEDF1CA8FD5C00A3AF4B /* Request+CoreDataProperties.swift in Sources */,
 				C598FAF81C7CF16B00A3748D /* SlugPointAnnotation.swift in Sources */,
 				C598FAFA1C7CF6D500A3748D /* LocationSummaryView.swift in Sources */,
 				C598FAEE1C7CCD7800A3748D /* DataManager.swift in Sources */,
 				C598FAE81C7CCD3400A3748D /* Location.swift in Sources */,
 				C598FAE71C7CCD3400A3748D /* Location+CoreDataProperties.swift in Sources */,
+				8F0DCED71CA8F85900A3AF4B /* SlugViewController.swift in Sources */,
+				8F8D800D1CA27129003B4D89 /* SegueHandlerType.swift in Sources */,
 				8F6FB92F1C9FB8380007A28D /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +413,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		8F0DCEDC1CA8FD5C00A3AF4B /* RequestQueue.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8F0DCEDD1CA8FD5C00A3AF4B /* RequestQueue.xcdatamodel */,
+			);
+			currentVersion = 8F0DCEDD1CA8FD5C00A3AF4B /* RequestQueue.xcdatamodel */;
+			path = RequestQueue.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		C598FAD11C7BD70100A3748D /* SlugSense.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
