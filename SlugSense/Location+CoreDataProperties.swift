@@ -21,5 +21,5 @@ extension Location {
     @NSManaged var uid: NSNumber?
     @NSManaged var ratings: NSManagedObject?
     @NSManaged var messages: NSManagedObject?
-
+     
 }

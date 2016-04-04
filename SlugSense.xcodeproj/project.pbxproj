@@ -15,6 +15,8 @@
 		8F0DCEE31CA8FDA300A3AF4B /* SessionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DCEE11CA8FDA300A3AF4B /* SessionTracker.swift */; };
 		8F0DCEE41CA8FDA300A3AF4B /* SyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DCEE21CA8FDA300A3AF4B /* SyncEngine.swift */; };
 		8F6FB92F1C9FB8380007A28D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FB92E1C9FB8380007A28D /* Theme.swift */; };
+		8F7D54BA1CAE66BA008108C7 /* MainView.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8F7D54B91CAE66BA008108C7 /* MainView.csv */; };
+		8F7D54BC1CAE9652008108C7 /* GeoLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D54BB1CAE9652008108C7 /* GeoLocationManager.swift */; };
 		8F8D800D1CA27129003B4D89 /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D800C1CA27129003B4D89 /* SegueHandlerType.swift */; };
 		C598FACB1C7BD70100A3748D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598FACA1C7BD70100A3748D /* AppDelegate.swift */; };
 		C598FACD1C7BD70100A3748D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598FACC1C7BD70100A3748D /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 		8F0DCEE11CA8FDA300A3AF4B /* SessionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTracker.swift; sourceTree = "<group>"; };
 		8F0DCEE21CA8FDA300A3AF4B /* SyncEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncEngine.swift; sourceTree = "<group>"; };
 		8F6FB92E1C9FB8380007A28D /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8F7D54B91CAE66BA008108C7 /* MainView.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MainView.csv; sourceTree = "<group>"; };
+		8F7D54BB1CAE9652008108C7 /* GeoLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoLocationManager.swift; sourceTree = "<group>"; };
 		8F8D800C1CA27129003B4D89 /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
 		C598FAC71C7BD70100A3748D /* SlugSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlugSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C598FACA1C7BD70100A3748D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				C598FAF21C7CF00900A3748D /* pin.png */,
+				8F7D54B91CAE66BA008108C7 /* MainView.csv */,
 				C598FACA1C7BD70100A3748D /* AppDelegate.swift */,
 				8F8D800B1CA270F5003B4D89 /* Helper Types */,
 				C598FAF51C7CF0F500A3748D /* Views */,
@@ -155,6 +160,7 @@
 				8F0DCEE21CA8FDA300A3AF4B /* SyncEngine.swift */,
 				C598FAED1C7CCD7800A3748D /* DataManager.swift */,
 				C598FADF1C7CCD1600A3748D /* CoreDataManager.swift */,
+				8F7D54BB1CAE9652008108C7 /* GeoLocationManager.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 				C598FAD81C7BD70100A3748D /* LaunchScreen.storyboard in Resources */,
 				C598FAF31C7CF00900A3748D /* pin.png in Resources */,
 				C598FAD51C7BD70100A3748D /* Assets.xcassets in Resources */,
+				8F7D54BA1CAE66BA008108C7 /* MainView.csv in Resources */,
 				C598FAD01C7BD70100A3748D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +244,7 @@
 				C598FAE01C7CCD1600A3748D /* CoreDataManager.swift in Sources */,
 				C598FACB1C7BD70100A3748D /* AppDelegate.swift in Sources */,
 				C598FAEA1C7CCD3400A3748D /* Rating.swift in Sources */,
+				8F7D54BC1CAE9652008108C7 /* GeoLocationManager.swift in Sources */,
 				C598FAEB1C7CCD3400A3748D /* Message+CoreDataProperties.swift in Sources */,
 				8F0DCED91CA8F8BD00A3AF4B /* DriverViewController.swift in Sources */,
 				8F0DCEE01CA8FD5C00A3AF4B /* RequestQueue.xcdatamodeld in Sources */,

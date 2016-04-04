@@ -63,9 +63,10 @@ class ViewController: UIViewController, MKMapViewDelegate, SegueHandlerType {
             pin.location = location
             map?.addAnnotation(pin)
         }
-        
+       
     }
     
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
